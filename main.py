@@ -5,6 +5,8 @@ import datetime
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
 import hashlib
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = 'mysecretkey'
