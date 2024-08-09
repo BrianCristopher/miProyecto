@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://iai.tv/assets/Uploads/_resampled/FillWzExNjgsNDAwXQ/We-can-hack-our-way-out-of-the-universe.webp'); /* Reemplaza con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button,
+a.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 30px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+button:hover,
+a.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #00ffcc;
+    box-shadow: 0 0 15px #00ffcc, 0 0 20px #00ffcc;
+}
+
+button:active,
+a.button:active {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #00ffcc, 0 0 15px #00ffcc inset;
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}

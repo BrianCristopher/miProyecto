@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HackUniverse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles_index.css') }}">
+</head>
+<body>
+    <h1>Bienvenido a HackUniverse</h1>
+    <a href="{{ url_for('register') }}" class="button">Registrarse</a>
+    <a href="{{ url_for('login') }}" class="button">Iniciar Sesión</a>
+</body>
+</html>

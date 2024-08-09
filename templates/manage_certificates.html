@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Certificados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ccertificates.css') }}">
+</head>
+<body>
+    <h1>Gestionar Certificados de Seguridad</h1>
+    <table>
+        <tr>
+            <th>Empresa</th>
+            <th>Dominio</th>
+            <th>Fecha de Emisión</th>
+            <th>Fecha de Expiración</th>
+            <th>Emisor</th>
+            <th>Algoritmo</th>
+            <th>Datos Encriptados</th>
+            <th>Acciones</th>
+        </tr>
+        {% for certificate in certificates %}
+        <tr class="{{ 'expired' if certificate.expired else '' }}">
+            <td>{{ certificate.company }}</td>
+            <td>{{ certificate.domain }}</td>
+            <td>{{ certificate.issue_date.strftime('%Y-%m-%d') }}</td>
+            <td>{{ certificate.expiry_date.strftime('%Y-%m-%d') }}</td>
+            <td>{{ certificate.issuer }}</td>
+            <td>{{ certificate.algorithm }}</td>
+            <td>{{ certificate.encrypted_data }}</td>
+            <td>
+                <a href="/edit_certificate/{{ certificate._id }}" class="button">Editar</a>
+                <a href="/delete_certificate/{{ certificate._id }}" class="button">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/" class="button">Volver a la página principal</a>
+</body>
+</html>
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Certificado</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='/css/create.css') }}">
+</head>
+<body>
+    <h1>Crear Certificado de Seguridad</h1>
+    <form action="/create_certificate" method="POST">
+        <label for="company">Empresa:</label>
+        <input type="text" id="company" name="company" required><br>
+
+        <label for="domain">Dominio:</label>
+        <input type="text" id="domain" name="domain" required><br>
+
+        <label for="issue_date">Fecha de Emisión:</label>
+        <input type="date" id="issue_date" name="issue_date" required><br>
+
+        <label for="expiry_date">Fecha de Expiración:</label>
+        <input type="date" id="expiry_date" name="expiry_date" required><br>
+
+        <label for="issuer">Emisor:</label>
+        <input type="text" id="issuer" name="issuer" required><br>
+
+        <label for="algorithm">Algoritmo de Cifrado:</label>
+        <select id="algorithm" name="algorithm" required>
+            <option value="SHA256">SHA256</option>
+            <option value="SHA512">SHA512</option>
+        </select><br>
+
+        <button type="submit">Crear Certificado</button>
+    </form>
+    <br>
+    <a href="/">Volver a la página principal</a>
+</body>
+</html>

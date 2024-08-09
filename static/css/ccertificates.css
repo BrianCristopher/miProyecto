@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.imagar.com/wp-content/uploads/2020/11/analista_programador-scaled-1.jpg'); /* Reemplaza con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #ffffff;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.expired {
+    background-color: rgba(255, 0, 0, 0.5); /* rojo claro con transparencia */
+    text-decoration: underline; /* Subraya todo el texto */
+    text-decoration-color: red; /* El color del subrayado será rojo */
+}
+
+.expired td {
+    text-decoration: underline; /* Subraya el contenido de cada celda */
+    text-decoration-color: red; /* El color del subrayado será rojo */
+}
+
+a,
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.button:hover,
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #00ffcc;
+    box-shadow: 0 0 15px #00ffcc, 0 0 20px #00ffcc;
+}
+
+a.button:active,
+button:active {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #00ffcc, 0 0 15px #00ffcc inset;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

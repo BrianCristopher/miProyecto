@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://media.licdn.com/dms/image/C4D12AQHMWLQJU-trew/article-cover_image-shrink_720_1280/0/1520128303791?e=2147483647&v=beta&t=AoaI5hCBEU0X1-IwBbZzidpmKfBzO4u1JqbDE8gKLbg'); /* Reemplaza con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 20%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.button {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #00ffcc;
+    box-shadow: 0 0 15px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.button:active {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #00ffcc, 0 0 15px #00ffcc inset;
